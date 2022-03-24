@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/rt-thread/include",
+                "${workspaceFolder}/rt-thread/finsh",
+                "${workspaceFolder}/Inc"
+            ],
+            "compilerPath": "/bin/gcc"
+        }
+    ],
+    "version": 4
+}

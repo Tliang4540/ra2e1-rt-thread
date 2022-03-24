@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.default.defines": [
+			"__ARM_ARCH_8M_BASE__"
+		],
+		"files.associations": {
+			"ra2e1.h": "c",
+			"bsp_clocks.h": "c",
+			"rtthread.h": "c",
+			"rthw.h": "c",
+			"rtconfig.h": "c",
+			"finsh_config.h": "c"
+		}
+	}
+}
