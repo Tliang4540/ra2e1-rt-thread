@@ -6,7 +6,7 @@ DP = $(CROSS_COMPILE)objdump
 HEX = $(CP) -Oihex
 BIN = $(CP) -Obinary -S
 CPU = -mcpu=cortex-m23 -mthumb -Wall -O3
-CFLAGS = $(CPU)
+CFLAGS = $(CPU) -g
 LDFLAGS = $(CPU) -TLink.ld
 
 #输出目标文件名

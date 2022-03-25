@@ -58,7 +58,7 @@ void OLED_Init(void)
     Write_Byte(0x40, 0);
 
     Write_Byte(0x8D, 0);			//Charge Pump Setting
-    Write_Byte(0x10, 0);
+    Write_Byte(0x14, 0);
 
     Write_Byte(0xA1, 0);			//Set Segment Re-map.0xA0:0 to SEG0,0xA1:127 to SEG0
     
@@ -71,13 +71,13 @@ void OLED_Init(void)
     Write_Byte(0x12, 0);
     
     Write_Byte(0x81, 0);			//Set Contrast Control
-    Write_Byte(0x9F, 0);
+    Write_Byte(0xCF, 0);
     
     Write_Byte(0xD9, 0);			//Set Pre-charge Period
-    Write_Byte(0x22, 0);
+    Write_Byte(0xF1, 0);
     
     Write_Byte(0xDB, 0);			//Set VCOMH Deselect Level
-    Write_Byte(0x40, 0);
+    Write_Byte(0x30, 0);
     
     Write_Byte(0xA4, 0);			//Entire Display ON
     

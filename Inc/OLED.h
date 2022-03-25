@@ -4,25 +4,25 @@
 #include "ra2e1.h"
 
 #define        OLED_DC            R_PORT2
-#define        OLED_DC_Pin        BSP_IO_PIN_06
+#define        OLED_DC_Pin        BSP_IO_PIN_08
 
 #define        Set_DC             bsp_set_pin(OLED_DC, OLED_DC_Pin)
 #define        Clr_DC             bsp_reset_pin(OLED_DC, OLED_DC_Pin)
 
 #define        OLED_CS            R_PORT2
-#define        OLED_CS_Pin        BSP_IO_PIN_01
+#define        OLED_CS_Pin        BSP_IO_PIN_06
 
 #define        Set_CS             bsp_set_pin(OLED_CS, OLED_CS_Pin)
 #define        Clr_CS             bsp_reset_pin(OLED_CS, OLED_CS_Pin)
 
 #define        OLED_CLK           R_PORT3
-#define        OLED_CLK_Pin       BSP_IO_PIN_00
+#define        OLED_CLK_Pin       BSP_IO_PIN_02
 
 #define        Set_CLK            bsp_set_pin(OLED_CLK, OLED_CLK_Pin)
 #define        Clr_CLK            bsp_reset_pin(OLED_CLK, OLED_CLK_Pin)
 
-#define        OLED_DIN           R_PORT3
-#define        OLED_DIN_Pin       BSP_IO_PIN_02
+#define        OLED_DIN           R_PORT2
+#define        OLED_DIN_Pin       BSP_IO_PIN_01
 
 #define        Set_DIN            bsp_set_pin(OLED_DIN, OLED_DIN_Pin)
 #define        Clr_DIN            bsp_reset_pin(OLED_DIN, OLED_DIN_Pin)

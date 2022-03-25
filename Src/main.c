@@ -1,5 +1,5 @@
 #include "ra2e1.h"
-#include <rtthread.h>
+#include "rtthread.h"
 #include "uart.h"
 #include "OLED.h"
 #include "app.h"
@@ -71,9 +71,9 @@ void sys_init(void)
     R_PORT1->PDR_b.PDR3 = 1;
     R_PORT1->PDR_b.PDR4 = 1;    
 
-    bsp_port_init(IOPORT_PORT_02_PIN_01, IOPORT_PERIPHERAL_IO, IO_OUT_MODE_HIGH);
     bsp_port_init(IOPORT_PORT_02_PIN_06, IOPORT_PERIPHERAL_IO, IO_OUT_MODE_HIGH);
-    bsp_port_init(IOPORT_PORT_03_PIN_00, IOPORT_PERIPHERAL_IO, IO_OUT_MODE_HIGH);
+    bsp_port_init(IOPORT_PORT_02_PIN_01, IOPORT_PERIPHERAL_IO, IO_OUT_MODE_HIGH);
+    bsp_port_init(IOPORT_PORT_02_PIN_08, IOPORT_PERIPHERAL_IO, IO_OUT_MODE_HIGH);
     bsp_port_init(IOPORT_PORT_03_PIN_02, IOPORT_PERIPHERAL_IO, IO_OUT_MODE_HIGH);
 
     OLED_Init();

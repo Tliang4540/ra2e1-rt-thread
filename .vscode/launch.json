@@ -1,0 +1,17 @@
+{
+    "configurations": [
+    {
+        "cwd": "${workspaceRoot}",
+        "executable": "./Out/rt_thread_msg.elf",
+        "name": "Cortex Debug",
+        "request": "launch",
+        "type": "cortex-debug",
+        "runToEntryPoint": "main",
+        "showDevDebugOutput": "none",
+        "servertype": "jlink",
+        "device": "R7FA2E1A7",
+        "interface": "swd",
+        "svdFile": "./R7FA2E1A9.svd"
+    }
+    ]
+}
